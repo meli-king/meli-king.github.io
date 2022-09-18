@@ -19,8 +19,13 @@
             font-family: "Roboto", sans-serif;
         }
 
+        .mainHeaderColour{
+            background-color: #008f8f;
+            padding: 50px;
+        }
+
         .mainHeader{
-            padding: 30px;
+            padding: 15px;
             text-align: center;
             background: white;
         }
@@ -32,36 +37,54 @@
         }
 
         .innerContentBorder {
-            background-color: #6b9b74;
-            padding: 10px;
+            background-color: #008f8f;
+            padding: 3px;
             margin-top: 20px;
         }
 
         .innerContent {
             background-color: white;
-            padding: 20px;
+            padding: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="mainHeader">
-        <h1>Melissa King</h1>
-        <p>Intro blabber.</p>
-        <p>Add a way to contact me + linkedin and github links ig</p>
+    <div class="mainHeaderColour">
+        <div class="mainHeader">
+            <h1 style="font-size:75px">Melissa King</h1>
+            <p style="font-size:20px">A University of Toronto Student</p>
+        </div>
     </div>
 
+    <div class="contentBox">
+        <h2>About Me</h2>
+        <p>Hello! I am Melissa, a 3rd year student attending UofT. I major in Computer Science and Geographical Imformation Systems (GIS).</p>
+        <p>You can find me on <a href="https://linkedin.com/in/melissa-king-266347237">LinkedIn</a> and <a href="https://github.com/meli-king">GitHub</a>.</p>
+    </div>
 
     <div class="contentBox">
         <h2>Current Project</h2>
-        <p>What I'm currently working on. Could be school related or a personal project.</p>
+        <p>What I'm currently working on, and what I plan to do.</p>
         
         <div class="innerContentBorder">
             <div class="innerContent">
                 <h3>Personal Website</h3>
                 <h5>Started August 2022 | Utilizes HTML, CSS</h5>
                 <p>
-                    The goal of this project was to learn
+                    The goal of this project is to apply the HTML and CSS skills I self-learned over the summer to 
+                    build my own website.
+                    This website is also a good way to compile all my past projects and record information about them, such as
+                    language used, concepts applied and lessons learned.
+                </p>
+                <p>
+                    I plan on continuing to update this wesbite in various ways such as
+                    <ul>
+                        <li>Adding a "read more" section for each project entry for more detailed information on the project</li>
+                        <li>Improving site layout to be more accessible on other devices</li>
+                        <li>Adding graphics to improve UI experience</li>
+                        <li>Using javascript to imbed some of the projects to the webpage</li>
+                    </ul>
                 </p>
             </div>
         </div>
@@ -70,19 +93,39 @@
 
     <div class="contentBox">
         <h2>Completed Projects</h2>
-        <p>What I've complted. These include both projects done for school and personal passion projects.</p>
+        <p>What I've completed. These include both projects done for school and personal passion projects.</p>
         
         <div class="innerContentBorder">
             <div class="innerContent">
                 <h3>RISC-V Unit Tester</h3>
                 <h5>May 2022 - August 2022 | Utilizes Java, JUnit, Assembly (RISC-V and MIPS)</h5>
+                <p>
+                    Together with a group of three other students working under Professor Andrew Petersen, we created a program to test
+                    student submitted assembly code automatically. Based off of MIPSUnit, a unit testing framework for MIPS assembly. 
+                </p>
+                <p>
+                    In this, I learned how to simulators work, how to work with a large, preexisting repository of code, and how to effectively 
+                    communicate with multiple people as a team.
+                </p>
             </div>
         </div>
 
         <div class="innerContentBorder">
             <div class="innerContent">
                 <h3>Linux Shell Program</h3>
-                <h5>January 2022 - April 2022 | Utilizes C, Python, pythong testing thing</h5>
+                <h5>January 2022 - April 2022 | Utilizes C, Python, pytest</h5>
+                <p>
+                    A C program containing most of the basic functionality of a shell like Bash. This shell can handle simple
+                    commands like <i>echo</i> and variable declaration, while also being able to chain commands via pipes and send signals 
+                    and text to other shell instances. Python and pytest was used to test the correctness of the shell.
+                    <!-- A program built with C to imitate a Bash shell program. This shell program can imitate basic commands like echo
+                    while also being able to use sockets to send messages across multiple instances of shells.
+                    The purpose of this project is to learn about shell behaviours and system calls to the point where (I) can develop my
+                    own shell that can perform the same behaviour. To test the functionality, Python was used. -->
+                </p>
+                <p>
+                    In this, I learned about the behaviour of a shell, how use system calls and how to build a large project from the ground up.
+                </p>
             </div>
         </div>
 
@@ -90,30 +133,113 @@
             <div class="innerContent">
                 <h3>Simon</h3>
                 <h5>March 2022 | Utilizes Assembly (RISC-V)</h5>
+                <p>
+                    The original game of <a href="https://en.wikipedia.org/wiki/Simon_(game)">Simon</a>, but made entirely in assembly.
+                    UI provided through Ripes, a visual computer architecture simulator and assembly code editor.
+                </p>
+                <p>
+                    In this, I learned how to code in assembly, use system calls and utilize functions that control external devices.
+                </p>
             </div>
         </div>
 
         <div class="innerContentBorder">
             <div class="innerContent">
                 <h3>Three Musketeers</h3>
-                <h5>September 2021 - December 2021 | Utilizes Java, JavaFX, Scrum Methodologies</h5>
+                <h5>September 2021 - December 2021 | Utilizes Java, JavaFX, Scrum/Agile Methodologies</h5>
+                <p>
+                    Together with a group of three other students, we recreated the classic game of <a href="https://en.wikipedia.org/wiki/Three_Musketeers_(game)">The Three Musketeers</a>
+                    using Java, and a GUI made with JavaFX. Development of this game involved the use of UML and Scrum Methodologies.
+                </p>
+                <p>
+                    In this, I learned about UML diagrams, Scrum Methodologies, and how to collaborate with new people effectively.
+                </p>
             </div>
         </div>
 
         <div class="innerContentBorder">
             <div class="innerContent">
-                <h3>Image Compressor</h3>
-                <h5> ? 2021 | Utilizes Python</h5>
+                <h3>Image Compression Algorithm</h3>
+                <h5> March 2021 | Utilizes Python, Object Oriented Programming</h5>
+                <p>
+                    To be edited
+                </p>
+                <p>
+                    <!-- In this, I learned how to implement Object Oriented Design, recursion and how to work with images (reword). -->
+                </p>
             </div>
         </div>
 
         <div class="innerContentBorder">
             <div class="innerContent">
-                <h3>Baba Is You Remake</h3>
-                <h5>? 2021 | Utilizes Python, Object Oriented Programming</h5>
+                <h3>Baba Is You</h3>
+                <h5>February 2021 | Utilizes Python, Object Oriented Programming</h5>
+                <p>
+                    To be edited
+                </p>
             </div>
         </div>
-    
+        
+        <div class="innerContentBorder">
+            <div class="innerContent">
+                <h3>Bike Share Toronto Program</h3>
+                <h5>October 2020 | Utilizes Python, Object Oriented Programming</h5>
+                <p>
+                    To be edited
+                </p>
+            </div>
+        </div>
+
+        <!-- <div class="innerContentBorder">
+            <div class="innerContent">
+                <h3>Twitter thing</h3>
+                <h5>? 2020 | Utilizes Python, Object Oriented Programming</h5>
+                <p>
+                    The goal of this project was to learn
+                </p>
+            </div>
+        </div>
+
+        <div class="innerContentBorder">
+            <div class="innerContent">
+                <h3>First thing</h3>
+                <h5>? 2020 | Utilizes Python, Object Oriented Programming</h5>
+                <p>
+                    The goal of this project was to learn
+                </p>
+            </div>
+        </div> -->
+
+        <div class="innerContentBorder">
+            <div class="innerContent">
+                <h3>GUI Interactive Tutorial for Computer Hardware</h3>
+                <h5> January 2020 | Utilizes Java, Processing3, JavaScript, P5</h5>
+                <p>
+                    To be edited
+                </p>
+            </div>
+        </div>
+
+        <div class="innerContentBorder">
+            <div class="innerContent">
+                <h3>Speed Racer</h3>
+                <h5> June 2019 | Utilizes Java, Processing3</h5>
+                <p>
+                    To be edited
+                </p>
+            </div>
+        </div>
+
+        <div class="innerContentBorder">
+            <div class="innerContent">
+                <h3>Frogger</h3>
+                <h5> March 2019 | Utilizes Java, Processing3</h5>
+                <p>
+                    To be edited
+                </p>
+            </div>
+        </div>
+
     </div>
 
 </body>
